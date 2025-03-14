@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: "inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f6ff;
+}
+
+/* Services Section */
+.services-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.services-heading {
+    font-size: 48px;
+    font-weight:600;
+    margin-bottom: 20px;
+}
+
+/* Services Grid */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* we can change the ards 4 or 3 accordingly in a row*/
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Service Card */
+.service-card {
+    background-color: #1b4d4b;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.service-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.service-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.service-subhead {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.service-description {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Explore More Button */
+.explore-btn {
+    display: inline-block;
+    background-color: white;
+    color: #1b4d4b;
+    padding: 8px 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .services-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;700&display=swap');
+
+/* Alert Scroll Bar */
+.alert-bar {
+    margin: 0;
+    padding: 0;
+
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1002; /* Higher than navbar */
+}
+
+.alert-bar marquee {
+    font-weight: bold;
+}
+
+.apply-link {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.apply-link:hover {
+    text-decoration: underline;
+}
+
+/* Navbar Adjustments */
+.navbar {
+    position: fixed;
+    top: 40px; /* Push down to fit below the alert bar */
+    width: 100%;
+    z-index: 1001; /* Below alert bar */
+}
+
+/* Push content down to avoid overlap */
+body {
+    padding-top: 80px; /* Adjust according to navbar and alert bar height */
+}
+
+/* 🔥 Pop-Up Form */
+.popup-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(253, 253, 253);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    z-index: 1003; /* Highest priority */
+}
+
+.form-container {
+    width: 300px;
+}
+
+.form-container h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 10px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.form-container button {
+    margin-top: 10px;
+    padding: 8px;
+    width: 100%;
+    background-color: rgb(46, 46, 147);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: darkblue;
+}

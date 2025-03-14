@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;700&display=swap');
+
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0f4ff;
+    padding-top: 70px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 300px; /* Adjust height as needed */
+    width: 350px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.user-role {
+    font-size: 14px;
+    color: #666;
+}
+
+.rating {
+    color: #ffcc00;
+    font-size: 18px;
+}
+
+.treatment-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}

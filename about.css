@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    padding-top: 100px;
+}
+
+/* Our story style */
+
+.our-story {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: auto;
+    padding: 60px 0;
+    background-color: #f3f6ff;
+}
+
+.our-story-info {
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 40px;
+    position: relative;
+}
+
+.our-story-info h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    /* Bold */
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.quote-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* .quote-left {
+            font-size: 50px;
+            color: #0057FF;
+            font-weight: bold;
+            top: 10px;
+            left: 10px;
+        }
+        .quote-right {
+            font-size: 50px;
+            color: #0057FF;
+            font-weight: bold;
+        } */
+
+.our-story-info p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    /* Light */
+    font-size: 16;
+    line-height: 1.8;
+    color: #000000;
+}
+
+.our-story-image {
+    width: 35%;
+    padding-right: 50px;
+}
+
+.our-story-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .our-story {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .our-story-info,
+    .our-story-image {
+        width: 100%;
+        padding: 0;
+    }
+
+    .our-story-info h1 {
+        font-size: 3rem;
+    }
+}
+
+
+/* Founder card style */
+
+.founder-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: 40px auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    height: 320px;
+    /* Balanced height */
+}
+
+.founder-info {
+    width: 58%;
+    padding-left: 50px;
+}
+
+.founder-info h1 {
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 5px;
+
+    font-size: 48px;
+    font-weight: bold;
+
+
+}
+
+.founder-info h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.founder-info p {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.6;
+    color: #000000;
+}
+
+.founder-image {
+    width: 38%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.founder-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Ensures full image is visible */
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .founder-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .founder-info,
+    .founder-image {
+        width: 100%;
+        padding: 0;
+    }
+
+    .founder-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .founder-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .founder-info p {
+        font-size: 0.95rem;
+    }
+
+    .founder-image {
+        height: 300px;
+        /* Balanced height */
+    }
+
+    .founder-image img {
+        height: 100%;
+        object-fit: contain;
+        /* Ensures full image is visible on mobile too */
+    }
+}
+
+/* Vision and mision style  */
+
+.target-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3C5C5E;
+    /* Background color from reference */
+    color: white;
+    padding: 80px 100px;
+    position: relative;
+}
+
+.target-box {
+    flex: 1;
+    text-align: left;
+    padding: 40px 60px;
+    /* Increased padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Ensures parallel alignment */
+}
+
+.target-box h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    min-height: 50px;
+    /* Ensures both headings have same height */
+}
+
+.target-box p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.divider {
+    width: 1px;
+    height: 70%;
+    background-color: white;
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Mobile View - Keep Everything Aligned */
+@media (max-width: 768px) {
+    .target-section {
+        flex-direction: row;
+        /* Keeps same layout */
+        flex-wrap: wrap;
+        padding: 50px;
+    }
+
+    .target-box {
+        padding: 20px 40px;
+    }
+
+    .divider {
+        display: none;
+    }
+}
+
+
+/* meet our team style */
+.team-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f3f6ff;
+}
+
+.team-heading {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Wrapper to enable scrolling */
+.team-wrapper {
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+}
+
+/* Carousel Container */
+.team-container {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+    width: max-content;
+}
+
+/* Individual Team Card */
+.team-card {
+    width: 400px;
+    height: 350px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Bio Section */
+.team-bio {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/* Image */
+.team-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.team-card:hover .team-image {
+    transform: scale(1.1);
+}
+
+/* Name & Role */
+.team-name {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0 5px;
+    color: #222;
+}
+
+.team-role {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .team-container {
+        gap: 10px;
+    }
+
+    .team-card {
+        width: 320px;
+        height: 420px;
+    }
+}
+
+
